@@ -7,31 +7,34 @@
 	</head>
 	<body>
 			<header><a href="index.html">list IT</a></header>
-		<div>
+		<nav>
 			<ul>
 				<li><a href="index.html">Logout</a></li>
 			</ul>
-		</div>
-		<div>
+		</nav>
+		<header>
 			<h1>list IT</h1>
 			<h2>lists made easy <img src="img/logo.png" alt="list IT logo" /></h2>
-		</div>
+		</header>
 		<h2>Manage Lists</h2>
 		<form target="#">
-			<div>View List</div>
-			<div>
-				<select>
-					<option>Select a List</option>
-					<option>Grocery Shopping</option>
-					<option>Vacation Shoppping</option>
-					<option>Chores</option>
+			<label for="list">View List</label>
+			<br />
+				<select id="list" name="list">
+					<option value="">Select a List</option>
+					<option value="grocery">Grocery Shopping</option>
+					<option value="vacation">Vacation Shoppping</option>
+					<option value="chores">Chores</option>
 				</select>
-			</div>
-			<div><button>Delete List</button></div>
-
-			<div>List Name</div>
-			<div><input type="text" /></div>
-			<div><button>Add List</button></div>
+				<br />
+			<button>Delete List</button>
+			<br />
+			<label for="listName">List Name</label>
+			<br />
+			<input type="text" id="listName"/>
+			<br />
+			<button>Add List</button>
+			<br />
 		</form>
 		<hr />
 		<form target="#">
